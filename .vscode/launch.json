@@ -7,8 +7,7 @@
         {
             "name": "dartcoursedio",
             "request": "launch",
-            "type": "dart",
-            "program": "bin/dartcoursedio.dart"
+            "type": "dart"
         }
     ]
 }
