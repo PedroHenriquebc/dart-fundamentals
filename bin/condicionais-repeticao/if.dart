@@ -10,4 +10,9 @@ void main(List<String> args) {
   } else {
     print("O aluno está reprovado com média $media");
   }
+
+  //if ternario é util para ocasioes onde há apenas 2 condições
+  var resultado = (media >= 7) ? "O aluno está aprovado" : "O aluno está reprovado";
+  print(resultado);
+
 }
