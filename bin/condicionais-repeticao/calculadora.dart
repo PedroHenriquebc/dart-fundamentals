@@ -16,20 +16,39 @@ void main(List<String> args) {
   line = stdin.readLineSync(encoding: utf8);
   var operacao = line ?? 0;
 
-  double resultado = 0;
-  if (operacao == "+") {
-    resultado = n1 + n2;
-  } else if (operacao == "-") {
-    resultado = n1 - n2;
-  } else if (operacao == "*") {
-    resultado = n1 * n2;
-  } else if (operacao == "/") {
-    resultado = n1 / n2;
-  } else {
-    print("Operação inválida!");
-    exit(0); //aplicação finalizada sem erros
-  }
+  // if (operacao == "+") {
+  //   resultado = n1 + n2;
+  // } else if (operacao == "-") {
+  //   resultado = n1 - n2;
+  // } else if (operacao == "*") {
+  //   resultado = n1 * n2;
+  // } else if (operacao == "/") {
+  //   resultado = n1 / n2;
+  // } else {
+  //   print("Operação inválida!");
+  //   exit(0); //aplicação finalizada sem erros
+  // }
 
+  double resultado = 0;
+
+  switch (operacao) {
+    case "+":
+      resultado = n1 + n2;
+      break;
+    case "-":
+      resultado = n1 - n2;
+      break;
+    case "*":
+      resultado = n1 * n2;
+      break;
+    case "/":
+      resultado = n1 / n2;
+      break;
+    default:
+      print("Operação inválida!");
+      exit(0);
+  }
+  
   print("Operação solicitada: $operacao");
   print("O resultado da operação é: $resultado");
 }
