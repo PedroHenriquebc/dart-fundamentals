@@ -1,4 +1,4 @@
-import 'package:dartcoursedio/dartcoursedio.dart';
+import '../bin/dartcoursedio.dart';
 import 'package:test/test.dart';
 
 void main() {
